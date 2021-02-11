@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         else if (Instance != this)
         {
             Destroy(this.gameObject);
+            Instance = new GameManager();
         }
     }
 
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 ResetGame();
-                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
             }
         }
 
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
         
         
             points = 0;
+        playerHealth = 3;
         
        
     }
