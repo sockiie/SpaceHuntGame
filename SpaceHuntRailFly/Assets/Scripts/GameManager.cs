@@ -22,12 +22,13 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+           
         }
         else if (Instance != this)
         {
-            Destroy(this.gameObject);
-            Instance = new GameManager();
+            Destroy(gameObject);
+            DontDestroyOnLoad(this.gameObject);
+
         }
     }
 
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 ResetGame();
-                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
             }
         }
 
