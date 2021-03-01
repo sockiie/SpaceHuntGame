@@ -45,7 +45,7 @@ public class HighscoreTable : MonoBehaviour {
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
         }
-
+     
         RefreshHighscoreTable();
     }
 

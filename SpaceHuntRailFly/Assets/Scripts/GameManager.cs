@@ -15,10 +15,11 @@ public class GameManager : MonoBehaviour
     public int playerHealth = 3;
     public bool isGameOver = false;
 
-    public int points = 0;
+    public static int points = 0;
 
     private void Awake()
     {
+        points = 0;
         if (Instance == null)
         {
             Instance = this;
@@ -69,7 +70,7 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         
         
-            points = 0;
+            
         playerHealth = 3;
         
        
