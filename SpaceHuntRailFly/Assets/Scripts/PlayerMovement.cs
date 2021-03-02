@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         float v = Input.GetAxis("Vertical");
 
         rotationZ = Input.GetAxis("Horizontal") * RotationSpeed;
-        rotationZ = Mathf.Clamp(rotationZ, -75, 75);
+        rotationZ = Mathf.Clamp(rotationZ, -50, 50);
 
         //rotationX = Input.GetAxis("Vertical") * RotationSpeed * -1;
         //rotationX = Mathf.Clamp(rotationX, -30, 30);

@@ -35,7 +35,7 @@ public class AsteroidSpawner : MonoBehaviour
     
     //index for goSpawn[] after spawn of Waypoint 1
     private int asteroidIndexWP1 = 0;
-    public int goAmount = 2000;
+    public int goAmount = 5000;
 
     private CinemachineSmoothPath.Waypoint[] waypoints;
     private int currentWaypoint = 0;

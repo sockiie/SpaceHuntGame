@@ -21,7 +21,9 @@ public class Coin : MonoBehaviour
 
             GameManager.Instance.CoinPickUp();
             StartCoroutine(Explode());
-            Destroy(gameObject);
+
+            transform.position = Vector3.zero;
+
         }
 
     }
