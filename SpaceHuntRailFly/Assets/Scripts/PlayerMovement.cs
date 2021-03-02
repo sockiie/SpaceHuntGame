@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
 
         LocalMove(h, v, xSpeed);
 
+        dolly.m_Speed += Time.deltaTime/5;
+
     }
 
     void LocalMove(float x, float y, float speed)

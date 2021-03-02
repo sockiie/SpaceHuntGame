@@ -35,7 +35,7 @@ public class AsteroidSpawner : MonoBehaviour
     
     //index for goSpawn[] after spawn of Waypoint 1
     private int asteroidIndexWP1 = 0;
-    public int goAmount = 500;
+    public int goAmount = 2000;
 
     private CinemachineSmoothPath.Waypoint[] waypoints;
     private int currentWaypoint = 0;
@@ -46,9 +46,10 @@ public class AsteroidSpawner : MonoBehaviour
         waypoints = cinemachine.m_Waypoints;
         goSpawn = new GameObject[goAmount];
         InitiateGameObjects();
-        SpawnGameObjectsAlongWaypoint();
-        SpawnGameObjectsAlongWaypoint();
+       // SpawnGameObjectsAlongWaypoint();
+      
     }
+
 
 
     /// <summary>
@@ -66,10 +67,11 @@ public class AsteroidSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(currentWaypoint < waypoints.Length-1 && player.transform.position.z >= waypoints[currentWaypoint].position.z)
-        //{
-        //    SpawnAsteroidsAlongWaypoint();
-        //}
+        if(currentWaypoint < waypoints.Length-1 && player.transform.position.z+10 >= waypoints[currentWaypoint].position.z)
+        {
+            
+            SpawnGameObjectsAlongWaypoint();
+        }
     }
 
     private void SpawnGameObjectsAlongWaypoint()
@@ -128,5 +130,7 @@ public class AsteroidSpawner : MonoBehaviour
         asteroidIndexWP1 = isFirstWPCycle ? asteroidIndex :  0;
         isFirstWPCycle = !isFirstWPCycle;
         currentWaypoint++;
+   
+        Debug.Log("Hello: " + isFirstWPCycle + asteroidIndexWP1 + "asterindex: " +asteroidIndex);
     }
 }

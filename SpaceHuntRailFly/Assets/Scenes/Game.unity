@@ -161,7 +161,7 @@ MonoBehaviour:
   shouldDelaySpawn: 1
   rotate: 1
   spawnAmountCycle: 10
-  goAmount: 500
+  goAmount: 2000
 --- !u!4 &3191993
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,9 +1578,23 @@ MonoBehaviour:
     roll: 0
   - position: {x: 0, y: 1274, z: 50}
     roll: 1
-  - position: {x: 0, y: 1274, z: 106.8}
+  - position: {x: 0, y: 1274, z: 89.12042}
     roll: 1
-  - position: {x: 0, y: 1274, z: 278.86102}
+  - position: {x: 0, y: 1274, z: 133.53441}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 166.73477}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 199.93513}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 233.1355}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 266.33588}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 299.53625}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 332.73663}
+    roll: 1
+  - position: {x: 0, y: 1274, z: 365.937}
     roll: 1
 --- !u!1 &1323162628
 GameObject:
@@ -2761,8 +2775,8 @@ MonoBehaviour:
   spawnDistance: 9
   shouldDelaySpawn: 0
   rotate: 0
-  spawnAmountCycle: 1
-  goAmount: 500
+  spawnAmountCycle: 10
+  goAmount: 2000
 --- !u!4 &2058144285
 Transform:
   m_ObjectHideFlags: 0
