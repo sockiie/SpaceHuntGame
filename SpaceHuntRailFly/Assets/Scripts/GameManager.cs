@@ -58,6 +58,9 @@ public class GameManager : MonoBehaviour
         healthText.text = "Health: " + playerHealth;
         if (playerHealth == 0)
         {
+
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");
+
             GameManager.Instance.GameOver();
             player.LockMovement();
           
