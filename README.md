@@ -22,3 +22,5 @@ Cora Alpay Paula Spieleentwicklung
 
 9 Einstellungen ändern 
 
+10 hoch runter Raumschiff schnauze 
+
