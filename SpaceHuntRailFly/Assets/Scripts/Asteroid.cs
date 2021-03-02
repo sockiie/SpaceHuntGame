@@ -25,6 +25,8 @@ public class Asteroid : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("CrashKomet");
+
             GameManager.Instance.PlayerHit();
             StartCoroutine(Explode());
 
