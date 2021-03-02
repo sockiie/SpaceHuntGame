@@ -6,7 +6,7 @@ Cora Alpay Paula Spieleentwicklung
 
 1. mit der zeit schneller fliegen. / mehr Kometen.
 
-2. Sound einpflegen 
+--- 2. Sound einpflegen --- ERLEDIGT 
 
 3. 3d Modelle einbauen 
 
