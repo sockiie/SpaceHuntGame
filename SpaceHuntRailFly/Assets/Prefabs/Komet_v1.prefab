@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1296054019}
   m_Layer: 0
   m_Name: Komet_v1
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1
-  explosionEffect: {fileID: 151302890273556627, guid: 2aa8955e98c177e4c8f8be2741191c0e, type: 3}
+  explosionEffect: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3,
+    type: 3}
 --- !u!135 &1296054019
 SphereCollider:
   m_ObjectHideFlags: 0

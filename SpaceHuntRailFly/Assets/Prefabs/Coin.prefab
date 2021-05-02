@@ -110,7 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 0, z: 90}
-  explosionEffect: {fileID: 151302890273556627, guid: 8d423c7d9c753a245a82143d9538eddf, type: 3}
+  explosionEffect: {fileID: 151302890273556627, guid: 8d423c7d9c753a245a82143d9538eddf,
+    type: 3}
 --- !u!1 &7585710644544622174
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 0, z: 90}
-  explosionEffect: {fileID: 151302890273556627, guid: 8d423c7d9c753a245a82143d9538eddf, type: 3}
+  explosionEffect: {fileID: 151302890273556627, guid: 8d423c7d9c753a245a82143d9538eddf,
+    type: 3}
 --- !u!135 &7585710644544622172
 SphereCollider:
   m_ObjectHideFlags: 0

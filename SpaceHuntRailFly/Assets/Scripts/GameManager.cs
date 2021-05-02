@@ -12,9 +12,11 @@ public class GameManager : MonoBehaviour
     public Text pointsText;
     public PlayerMovement player;
     public CameraShake cameraShake;
+    public GameObject explosionEffect;
 
     public int playerHealth = 3;
     public bool isGameOver = false;
+    public bool PowerUpp = false;
 
     public static int points = 0;
 
@@ -55,7 +57,14 @@ public class GameManager : MonoBehaviour
 
     public void PlayerHit()
     {
-        StartCoroutine(cameraShake.Shake(.15f, .1f));
+        Explode();
+        //StartCoroutine(cameraShake.Shake(.15f, .4f));
+        if (PowerUpp == true)
+        {
+            PowerUpp = false;
+
+        }
+        else
         playerHealth--;
         healthText.text = "Health: " + playerHealth;
         if (playerHealth == 0)
@@ -85,5 +94,20 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
     
     }
+
+    public void Explode()
+    {
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+        Debug.Log("Boom");
+    }
+
+    public void PowerUp(Collider player)
+    {
+
+        PowerUpp = true;
+    Debug.Log("POOOWEER");
+    }
+
+
 
 }
