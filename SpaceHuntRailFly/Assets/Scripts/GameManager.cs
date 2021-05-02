@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using Cinemachine;
 using System;
 
-
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
@@ -57,7 +56,6 @@ public class GameManager : MonoBehaviour
     public void PlayerHit()
     {
         StartCoroutine(cameraShake.Shake(.15f, .1f));
-
         playerHealth--;
         healthText.text = "Health: " + playerHealth;
         if (playerHealth == 0)
