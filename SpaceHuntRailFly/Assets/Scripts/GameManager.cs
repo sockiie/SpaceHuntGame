@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public PlayerMovement player;
     public CameraShake cameraShake;
     public GameObject explosionEffect;
+    public GameObject playerShield;
 
     public int playerHealth = 3;
     public bool isGameOver = false;
@@ -21,7 +22,9 @@ public class GameManager : MonoBehaviour
     public static int points = 0;
 
     private void Awake()
+
     {
+        playerShield.SetActive(false);
         points = 0;
         if (Instance == null)
         {
@@ -62,6 +65,7 @@ public class GameManager : MonoBehaviour
         if (PowerUpp == true)
         {
             PowerUpp = false;
+            playerShield.SetActive(false);
 
         }
         else
@@ -105,6 +109,7 @@ public class GameManager : MonoBehaviour
     {
 
         PowerUpp = true;
+        playerShield.SetActive(true);
     Debug.Log("POOOWEER");
     }
 

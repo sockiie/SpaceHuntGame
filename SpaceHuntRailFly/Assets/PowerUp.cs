@@ -22,7 +22,7 @@ public class PowerUp : MonoBehaviour
             GameManager.Instance.PowerUp(other);
             StartCoroutine(Explode());
 
-           // transform.position = Vector3.zero;
+            transform.position = Vector3.zero;
 
         }
 
