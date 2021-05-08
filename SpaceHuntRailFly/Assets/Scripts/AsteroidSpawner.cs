@@ -67,7 +67,7 @@ public class AsteroidSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentWaypoint < waypoints.Length-1 && player.transform.position.z+10 >= waypoints[currentWaypoint].position.z)
+        if(currentWaypoint < waypoints.Length-1 && player.transform.position.z+30 >= waypoints[currentWaypoint].position.z)
         {
             
             SpawnGameObjectsAlongWaypoint();
