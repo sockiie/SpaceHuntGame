@@ -986,6 +986,16 @@ MonoBehaviour:
     volume: 0.373
     pitch: 2.13
     source: {fileID: 0}
+  - name: CollectPU
+    clip: {fileID: 8300000, guid: 811929ac7a9454dd99197a1b4b111ec1, type: 3}
+    volume: 1
+    pitch: 2.13
+    source: {fileID: 0}
+  - name: CrashKometSchild
+    clip: {fileID: 8300000, guid: 39eb28afd78524e3cb8380e021caa641, type: 3}
+    volume: 0.373
+    pitch: 2.13
+    source: {fileID: 0}
 --- !u!4 &651835621
 Transform:
   m_ObjectHideFlags: 0

@@ -64,6 +64,9 @@ public class GameManager : MonoBehaviour
         //StartCoroutine(cameraShake.Shake(.15f, .4f));
         if (PowerUpp == true)
         {
+
+            FindObjectOfType<AudioManager>().Play("CrashKometSchild");
+
             PowerUpp = false;
             playerShield.SetActive(false);
 

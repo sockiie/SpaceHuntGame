@@ -17,7 +17,7 @@ public class PowerUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<AudioManager>().Play("CollcectCoin1");
+            FindObjectOfType<AudioManager>().Play("CollectPU");
 
             GameManager.Instance.PowerUp(other);
             StartCoroutine(Explode());
