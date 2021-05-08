@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance = null;
     public Text healthText;
     public Text pointsText;
+    public GameObject gameoverText;
     public PlayerMovement player;
     public CameraShake cameraShake;
     public GameObject explosionEffect;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
 
     {
+        gameoverText.SetActive(false);
         playerShield.SetActive(false);
         points = 0;
         if (Instance == null)
@@ -76,6 +78,7 @@ public class GameManager : MonoBehaviour
         healthText.text = "Health: " + playerHealth;
         if (playerHealth == 0)
         {
+            gameoverText.SetActive(true);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
