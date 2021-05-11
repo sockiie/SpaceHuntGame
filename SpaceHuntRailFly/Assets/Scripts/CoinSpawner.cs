@@ -120,7 +120,7 @@ public class CoinSpawner : MonoBehaviour
                     tmp.GetComponent<Asteroid>().setRotation(randomRotation);
                 }
 
-                tmp.transform.localScale = new Vector3(5, 3, 5);
+                tmp.transform.localScale = new Vector3(3, 1, 3);
 
                 asteroidIndex++;
             }

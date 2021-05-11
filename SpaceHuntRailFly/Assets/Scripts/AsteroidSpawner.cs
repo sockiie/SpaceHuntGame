@@ -121,7 +121,7 @@ public class AsteroidSpawner : MonoBehaviour
                     tmp.GetComponent<Asteroid>().setRotation(randomRotation);
                 }
 
-                float randomSize = UnityEngine.Random.Range(1, 4);
+                float randomSize = UnityEngine.Random.Range(3, 8);
                 tmp.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
 
                 asteroidIndex++;

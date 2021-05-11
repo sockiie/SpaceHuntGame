@@ -3,7 +3,27 @@ guid: 048d1014f3e5642ee8163d2ac57886c5
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stern_PowerUp
+    second: {fileID: 2100000, guid: 28a821a0f133e42748708794d354696b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerUp_v1_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 9d6a3940d8fc94b9c9ff494bce3db0cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerUp_v1_lambert1_Normal
+    second: {fileID: 2800000, guid: c32188a46546c4355a18ab013b74e511, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerUp_v1_lambert1_Roughness
+    second: {fileID: 2800000, guid: a08fce47b97834be7a16ab51a5022856, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0

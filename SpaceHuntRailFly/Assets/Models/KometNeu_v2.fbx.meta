@@ -3,7 +3,22 @@ guid: 9e9a579a8e7744a3388f1f814941c5e3
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KometNeu_v1_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 71b8c66fc3ea34f7d9418a5c92bb1fe3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KometNeu_v1_lambert1_Normal
+    second: {fileID: 2800000, guid: 02209c31b6f10476baebbcd0bda8012a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KometNeu_v1_lambert1_Roughness
+    second: {fileID: 2800000, guid: 548cd0e01cb114050aafc61a9cc5f815, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
