@@ -5,20 +5,25 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Komet
+    second: {fileID: 2100000, guid: a1343ab13c6e64f82b0ae4e9dc546cb3, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: KometNeu_v1_lambert1_BaseColor
-    second: {fileID: 2800000, guid: 71b8c66fc3ea34f7d9418a5c92bb1fe3, type: 3}
+    second: {fileID: 2800000, guid: 36338bfaa65cf40cbb493aa4fa90f73e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: KometNeu_v1_lambert1_Normal
-    second: {fileID: 2800000, guid: 02209c31b6f10476baebbcd0bda8012a, type: 3}
+    second: {fileID: 2800000, guid: aab8bb704f4244ff8940cd18a923f44a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: KometNeu_v1_lambert1_Roughness
-    second: {fileID: 2800000, guid: 548cd0e01cb114050aafc61a9cc5f815, type: 3}
+    second: {fileID: 2800000, guid: 50141ed4fe5c048f888cd34c84e60a9c, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
