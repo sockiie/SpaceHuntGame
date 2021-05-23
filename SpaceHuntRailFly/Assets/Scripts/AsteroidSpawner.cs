@@ -12,8 +12,8 @@ public class AsteroidSpawner : MonoBehaviour
     public GameObject asteroidPrefab;
     public GameObject asteroidPrefab2;
 
-    public float boundaryX = 7.390032f;
-    public float boundaryY = 4.450223f;
+    public float boundaryX = 0.1f;
+    public float boundaryY = 0.1f;
 
     // offset between spawning gameObjects, currently only working on the z axis
     public float spawnDistance = 2f;
