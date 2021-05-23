@@ -17,7 +17,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            
+            FindObjectOfType<AudioManager>().Play("CollcectCoin1");
 
             GameManager.Instance.CoinPickUp();
             StartCoroutine(Explode());
