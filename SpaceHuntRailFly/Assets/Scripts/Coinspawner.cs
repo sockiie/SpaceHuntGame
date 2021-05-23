@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
+using Cinemachine;
+using System;
 
 public class CoinSpawner : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CoinSpawner : MonoBehaviour
     public CinemachineSmoothPath cinemachine;
 
     public GameObject coinPrefab;
+
 
     public float boundaryX = 7.390032f;
     public float boundaryY = 4.450223f;
@@ -31,9 +33,9 @@ public class CoinSpawner : MonoBehaviour
 
     // with this boolean we can spawn 2 Waypoints at the same time
     private bool isFirstWPCycle = true;
-
+    
     //index for goSpawn[] after spawn of Waypoint 1
-    private int coinIndexWP1 = 0;
+    private int asteroidIndexWP1 = 0;
     public int goAmount = 5000;
 
     private CinemachineSmoothPath.Waypoint[] waypoints;
@@ -45,8 +47,8 @@ public class CoinSpawner : MonoBehaviour
         waypoints = cinemachine.m_Waypoints;
         goSpawn = new GameObject[goAmount];
         InitiateGameObjects();
-        // SpawnGameObjectsAlongWaypoint();
-
+       // SpawnGameObjectsAlongWaypoint();
+      
     }
 
 
@@ -59,18 +61,16 @@ public class CoinSpawner : MonoBehaviour
         for (int i = 0; i < goAmount; i++)
         {
             goSpawn[i] = Instantiate(coinPrefab, Vector3.zero, Quaternion.identity);
-
-            Debug.Log("coin");
         }
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentWaypoint < waypoints.Length - 1 && player.transform.position.z + 30 >= waypoints[currentWaypoint].position.z)
+        if(currentWaypoint < waypoints.Length-1 && player.transform.position.z+30 >= waypoints[currentWaypoint].position.z)
         {
-
+            
             SpawnGameObjectsAlongWaypoint();
         }
     }
@@ -85,9 +85,9 @@ public class CoinSpawner : MonoBehaviour
         }
         else
         {
-            asteroidIndex = coinIndexWP1 + 1;
+            asteroidIndex = asteroidIndexWP1 + 1;
         }
-
+        
         if (currentWaypoint == waypoints.Length - 1)
         {
             return;
@@ -95,9 +95,9 @@ public class CoinSpawner : MonoBehaviour
         start = waypoints[currentWaypoint].position;
         end = waypoints[currentWaypoint + 1].position;
 
-        if (currentWaypoint == 0 && shouldDelaySpawn)
+        if(currentWaypoint == 0 && shouldDelaySpawn)
         {
-            currentZ = start.z + 10;
+            currentZ = start.z + 10 ;
         }
         else
         {
@@ -109,7 +109,7 @@ public class CoinSpawner : MonoBehaviour
         while (currentZ < end.z - spawnDistance)
         {
             //spawn the amount of gameObjects for a z value
-            for (int i = 0; i < spawnAmountCycle; i++)
+            for(int i = 0; i < spawnAmountCycle; i++)
             {
                 Vector3 pos = new Vector3(UnityEngine.Random.Range(start.x - boundaryX, end.x + boundaryX), UnityEngine.Random.Range(start.y - boundaryY, end.y + boundaryY), currentZ);
                 var tmp = goSpawn[asteroidIndex];
@@ -120,17 +120,18 @@ public class CoinSpawner : MonoBehaviour
                     tmp.GetComponent<Asteroid>().setRotation(randomRotation);
                 }
 
-                tmp.transform.localScale = new Vector3(3, 1, 3);
+                
+                tmp.transform.localScale = new Vector3(2, 2, 2);
 
                 asteroidIndex++;
             }
 
             currentZ += spawnDistance;
         }
-        coinIndexWP1 = isFirstWPCycle ? asteroidIndex : 0;
+        asteroidIndexWP1 = isFirstWPCycle ? asteroidIndex :  0;
         isFirstWPCycle = !isFirstWPCycle;
         currentWaypoint++;
-
-        Debug.Log("Hello: " + isFirstWPCycle + coinIndexWP1 + "asterindex: " + asteroidIndex);
+   
+        Debug.Log("Hello: " + isFirstWPCycle + asteroidIndexWP1 + "asterindex: " +asteroidIndex);
     }
 }

@@ -10,10 +10,10 @@ public class AsteroidSpawner : MonoBehaviour
     public CinemachineSmoothPath cinemachine;
 
     public GameObject asteroidPrefab;
+    public GameObject asteroidPrefab2;
 
-
-    public float boundaryX = 7.390032f;
-    public float boundaryY = 4.450223f;
+    public float boundaryX = 0.1f;
+    public float boundaryY = 0.1f;
 
     // offset between spawning gameObjects, currently only working on the z axis
     public float spawnDistance = 2f;
@@ -60,7 +60,17 @@ public class AsteroidSpawner : MonoBehaviour
     {
         for (int i = 0; i < goAmount; i++)
         {
+            if(i % 2 == 0)
+            {
             goSpawn[i] = Instantiate(asteroidPrefab, Vector3.zero, Quaternion.identity);
+
+            }
+
+            else if(i % 2 != 0)
+            {
+
+            goSpawn[i] = Instantiate(asteroidPrefab2, Vector3.zero, Quaternion.identity);
+            }
         }
         
     }
