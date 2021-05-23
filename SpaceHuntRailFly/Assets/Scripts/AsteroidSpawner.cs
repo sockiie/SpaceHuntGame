@@ -11,6 +11,7 @@ public class AsteroidSpawner : MonoBehaviour
 
     public GameObject asteroidPrefab;
 
+
     public float boundaryX = 7.390032f;
     public float boundaryY = 4.450223f;
 
