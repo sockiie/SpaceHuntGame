@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(0, 0, -rotationZ);
 
-        LocalMove(h, v, xSpeed);
+        LocalMove(h*1.5f, v*1.5f, xSpeed);
 
         dolly.m_Speed += Time.deltaTime/5;
 

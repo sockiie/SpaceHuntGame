@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
 
     {
+        isGameOver = false;
         gameoverText.SetActive(false);
         playerShield.SetActive(false);
         points = 0;
@@ -56,12 +57,17 @@ public class GameManager : MonoBehaviour
 
         internal void CoinPickUp()
     {
-        points++;
-        pointsText.text = "Points: " + points;
+        if (playerHealth != 0)
+        {
+            FindObjectOfType<AudioManager>().Play("CollcectCoin1");
+            points++;
+            pointsText.text = "Points: " + points;
+        }
     }
 
     public void PlayerHit()
     {
+
         Explode();
         //StartCoroutine(cameraShake.Shake(.15f, .4f));
         if (PowerUpp == true)
@@ -73,13 +79,16 @@ public class GameManager : MonoBehaviour
             playerShield.SetActive(false);
 
         }
-        else
+        else if(playerHealth != 0){ 
+        FindObjectOfType<AudioManager>().Play("CrashKomet");
         playerHealth--;
+        
         healthText.text = "Health: " + playerHealth;
-        if (playerHealth == 0)
+    }
+        if (playerHealth == 0 && isGameOver==false)
         {
             gameoverText.SetActive(true);
-
+            isGameOver = true;
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
             GameManager.Instance.GameOver();
@@ -113,10 +122,12 @@ public class GameManager : MonoBehaviour
 
     public void PowerUp(Collider player)
     {
-
-        PowerUpp = true;
+        if (isGameOver == false) {
+            FindObjectOfType<AudioManager>().Play("CollectPU");
+            PowerUpp = true;
         playerShield.SetActive(true);
     Debug.Log("POOOWEER");
+        }
     }
 
 
