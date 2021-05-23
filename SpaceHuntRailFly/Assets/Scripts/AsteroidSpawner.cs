@@ -60,6 +60,8 @@ public class AsteroidSpawner : MonoBehaviour
         for (int i = 0; i < goAmount; i++)
         {
             goSpawn[i] = Instantiate(asteroidPrefab, Vector3.zero, Quaternion.identity);
+
+            Debug.Log("Asteroid");
         }
         
     }
@@ -119,7 +121,7 @@ public class AsteroidSpawner : MonoBehaviour
                     tmp.GetComponent<Asteroid>().setRotation(randomRotation);
                 }
 
-                float randomSize = UnityEngine.Random.Range(1, 3);
+                float randomSize = UnityEngine.Random.Range(3, 8);
                 tmp.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
 
                 asteroidIndex++;
