@@ -7,6 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+<<<<<<< Updated upstream:SpaceHuntRailFly/Assets/Models/cometgeshaed/Komet2_geshadet.fbx.meta
       name: Komet2
     second: {fileID: 2100000, guid: 5950d5dbf070a43fd91e7a11f56622a2, type: 2}
   - first:
@@ -24,6 +25,25 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Komet2_v1_lambert1_Roughness
     second: {fileID: 2800000, guid: c166d70317879484380af85a8cd6c260, type: 3}
+=======
+      name: goldCoin
+    second: {fileID: 2100000, guid: fb1812b1094e84764aa289016422ac31, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Coin_v1_gold_BaseColor
+    second: {fileID: 2800000, guid: a23f1e59ee49d489684eb2a24ad90196, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Coin_v1_gold_Normal
+    second: {fileID: 2800000, guid: 8ffcabece0b0e4dbd8e5b8bc1cdf98b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Coin_v1_gold_Roughness
+    second: {fileID: 2800000, guid: c5c7d347d457f4f81983c2aa33e95f8f, type: 3}
+>>>>>>> Stashed changes:SpaceHuntRailFly/Assets/Models/Coin_final1.fbx.meta
   materials:
     materialImportMode: 1
     materialName: 0
