@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance = null;
     public Text healthText;
     public Text pointsText;
-    public GameObject gameoverText;
     public PlayerMovement player;
     public CameraShake cameraShake;
     public GameObject explosionEffect;
@@ -25,8 +24,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
 
     {
+<<<<<<< HEAD
         isGameOver = false;
         gameoverText.SetActive(false);
+=======
+>>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
         playerShield.SetActive(false);
         points = 0;
         if (Instance == null)
@@ -87,8 +89,12 @@ public class GameManager : MonoBehaviour
     }
         if (playerHealth == 0 && isGameOver==false)
         {
+<<<<<<< HEAD
             gameoverText.SetActive(true);
             isGameOver = true;
+=======
+
+>>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
             GameManager.Instance.GameOver();
