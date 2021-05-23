@@ -25,8 +25,11 @@ public class GameManager : MonoBehaviour
 
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         isGameOver = false;
         gameoverText.SetActive(false);
+=======
+>>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
 =======
 >>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
         playerShield.SetActive(false);
@@ -90,9 +93,12 @@ public class GameManager : MonoBehaviour
         if (playerHealth == 0 && isGameOver==false)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             gameoverText.SetActive(true);
             isGameOver = true;
 =======
+=======
+>>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
 
 >>>>>>> parent of 0c3683f (Merge branch 'main' of https://github.com/sockiie/SpaceHuntGame into main)
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
