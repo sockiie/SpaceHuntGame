@@ -3,7 +3,57 @@ guid: 85ccb90d3107a423a9af5b15043a04fe
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CockpitGRShader
+    second: {fileID: 2100000, guid: 869132448c1fc4c3ba7fdec814255d10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CockpitKLShader
+    second: {fileID: 2100000, guid: 51a1553eeb91a4f379148066b8d4e969, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FluegelLinksShader
+    second: {fileID: 2100000, guid: 67d6e1ce1ad71470d8e50d6cded648c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FluegelRechtsShader1
+    second: {fileID: 2100000, guid: f98484093e2c0424790fe7ea03c4fe94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HauptkoerperShader
+    second: {fileID: 2100000, guid: c9b5d9d8967274364bb1c3fe64d90999, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RaketeLinksShader
+    second: {fileID: 2100000, guid: 2690408141a694338bf7542767745b4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RaketeRechtsShader1
+    second: {fileID: 2100000, guid: 2690408141a694338bf7542767745b4f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Raumschiff_v32_CockpitGRShader_BaseColor
+    second: {fileID: 2800000, guid: 1366bad2460324e5c983580660573b5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Raumschiff_v32_CockpitGRShader_Normal
+    second: {fileID: 2800000, guid: 512e53cfbfb964e88a09115f60080a0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Raumschiff_v32_CockpitGRShader_Roughness
+    second: {fileID: 2800000, guid: bee552d9b0a0f43ac84d3765e96e30c1, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
