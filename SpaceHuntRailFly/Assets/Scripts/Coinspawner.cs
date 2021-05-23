@@ -120,7 +120,7 @@ public class Coinspawner : MonoBehaviour
                 }
 
            
-                tmp.transform.localScale = new Vector3(3, 3, 3);
+                tmp.transform.localScale = new Vector3(20, 20, 20);
 
                 asteroidIndex++;
             }

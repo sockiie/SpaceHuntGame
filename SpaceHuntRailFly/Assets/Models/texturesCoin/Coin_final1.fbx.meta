@@ -3,27 +3,7 @@ guid: 8f1fa6f45f5934924a92e9f15af2547c
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: goldCoin
-    second: {fileID: 2100000, guid: 5216bd636a7f6439cb3429026e67ecb4, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Coin_v1_gold_BaseColor
-    second: {fileID: 2800000, guid: 5d47958d570f242cfbfd5ed6ed153200, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Coin_v1_gold_Normal
-    second: {fileID: 2800000, guid: ccd3e1d7002084417ac0f8fab88d24df, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Coin_v1_gold_Roughness
-    second: {fileID: 2800000, guid: 4d9ed792da3c2449f98c93c6c5b8021c, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
