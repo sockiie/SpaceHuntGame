@@ -3120,7 +3120,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1951231671}
   - component: {fileID: 1951231670}
-  - component: {fileID: 1951231672}
   m_Layer: 0
   m_Name: PowerupSpawner
   m_TagString: Untagged
@@ -3142,9 +3141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2041471757}
   cinemachine: {fileID: 1295963507}
-  asteroidPrefab: {fileID: 283745609773775462, guid: 9fc6e33ef370440b9a3704dfe3c07c23,
+  asteroidPrefab: {fileID: 7188083991253872274, guid: ed77713265c804fb8a26a16f1b8a4c1a,
     type: 3}
-  asteroidPrefab2: {fileID: 0}
+  asteroidPrefab2: {fileID: 7188083991253872274, guid: ed77713265c804fb8a26a16f1b8a4c1a,
+    type: 3}
   boundaryX: 2.5
   boundaryY: 1.5
   spawnDistance: 9
@@ -3166,29 +3166,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1951231672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951231669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a92ca913be74defa48d12abdf39a93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2041471757}
-  cinemachine: {fileID: 1295963507}
-  coinPrefab: {fileID: 283745609773775462, guid: 9fc6e33ef370440b9a3704dfe3c07c23,
-    type: 3}
-  boundaryX: 2.5
-  boundaryY: 1.5
-  spawnDistance: 9
-  shouldDelaySpawn: 0
-  rotate: 0
-  spawnAmountCycle: 2
-  goAmount: 50
 --- !u!1 &2012714963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,7 +3438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2058144285}
   - component: {fileID: 2058144284}
-  - component: {fileID: 2058144286}
   m_Layer: 0
   m_Name: CoinSpawner
   m_TagString: Untagged
@@ -3476,7 +3452,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058144283}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4c60f2fe9eec8a4dbdff5809384d4e8, type: 3}
   m_Name: 
@@ -3485,14 +3461,15 @@ MonoBehaviour:
   cinemachine: {fileID: 1295963507}
   asteroidPrefab: {fileID: 6809310849353500996, guid: a216026d98d3c497eacb0465acca473a,
     type: 3}
-  asteroidPrefab2: {fileID: 0}
+  asteroidPrefab2: {fileID: 6809310849353500996, guid: a216026d98d3c497eacb0465acca473a,
+    type: 3}
   boundaryX: 2.5
   boundaryY: 1.5
   spawnDistance: 9
   shouldDelaySpawn: 0
   rotate: 0
   spawnAmountCycle: 10
-  goAmount: 2000
+  goAmount: 5000
 --- !u!4 &2058144285
 Transform:
   m_ObjectHideFlags: 0
@@ -3507,29 +3484,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2058144286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058144283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a92ca913be74defa48d12abdf39a93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2041471757}
-  cinemachine: {fileID: 1295963507}
-  coinPrefab: {fileID: 6809310849353500996, guid: a216026d98d3c497eacb0465acca473a,
-    type: 3}
-  boundaryX: 2.5
-  boundaryY: 1.5
-  spawnDistance: 9
-  shouldDelaySpawn: 0
-  rotate: 0
-  spawnAmountCycle: 10
-  goAmount: 2000
 --- !u!1 &2059879499
 GameObject:
   m_ObjectHideFlags: 0
