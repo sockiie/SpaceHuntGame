@@ -78,7 +78,7 @@ public class HighscoreTable : MonoBehaviour {
     }
 
     private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList) {
-        float templateHeight = 31f;
+        float templateHeight = 55f;
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
@@ -108,13 +108,14 @@ public class HighscoreTable : MonoBehaviour {
         entryTransform.Find("background").gameObject.SetActive(rank % 2 == 1);
         
         // Highlight First
-        if (rank == 1) {
+       /* if (rank == 1) {
             entryTransform.Find("posText").GetComponent<Text>().color = Color.green;
             entryTransform.Find("scoreText").GetComponent<Text>().color = Color.green;
             entryTransform.Find("nameText").GetComponent<Text>().color = Color.green;
         }
-
+    */
         // Set tropy
+        /*
         switch (rank) {
         default:
             entryTransform.Find("trophy").gameObject.SetActive(false);
@@ -130,7 +131,7 @@ public class HighscoreTable : MonoBehaviour {
             break;
 
         }
-
+    */
         transformList.Add(entryTransform);
     }
 
