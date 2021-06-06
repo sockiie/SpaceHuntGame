@@ -15,9 +15,8 @@ public class GameManager : MonoBehaviour
     public CameraShake cameraShake;
     public GameObject explosionEffect;
     public GameObject playerShield;
-    public GameObject[] health;
 
-    public int playerHealth;
+    public int playerHealth = 3;
     public bool isGameOver = false;
     public bool PowerUpp = false;
 
@@ -85,22 +84,7 @@ public class GameManager : MonoBehaviour
         playerHealth--;
         
         healthText.text = "Health: " + playerHealth;
-        }
-
-        if (playerHealth < 1)
-        {
-            Destroy(health[0].gameObject);
-        } 
-        else if (playerHealth < 2)
-        {
-            Destroy(health[1].gameObject);
-        }
-        else if (playerHealth < 3)
-        {
-            Destroy(health[2].gameObject);
-        }
-
-
+    }
         if (playerHealth == 0 && isGameOver==false)
         {
             gameoverText.SetActive(true);
